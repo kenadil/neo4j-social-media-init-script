@@ -47,7 +47,7 @@ CREATE
     (saksa)-[:MEMBER_OF]->(business),
     (pirat)-[:MEMBER_OF]->(business)
 
----
+
 
 CREATE 
   (king:User {username: 'EvilArthas', name: 'Виталий Цаль', age: 31, city: 'Dnepropetrovsk', sex: 'M'}),
