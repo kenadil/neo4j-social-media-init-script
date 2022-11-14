@@ -47,11 +47,13 @@ CREATE
     (saksa)-[:MEMBER_OF]->(business),
     (pirat)-[:MEMBER_OF]->(business)
 
-
+// Второй запрос скрипта - прогоняется отдельно
 
 CREATE 
   (king:User {username: 'EvilArthas', name: 'Виталий Цаль', age: 31, city: 'Dnepropetrovsk', sex: 'M'}),
   (ramzes:User {username: 'Ramzes666', name: 'Roman Kushnarev', age: 23, city: 'Moscow', sex: 'M'})
+
+// Третий запрос скрипта - прогоняется отдельно
 
 MATCH (n:User)
 WHERE n.username="EvilArthas"
@@ -62,6 +64,8 @@ WHERE n.username="EvilArthas"
     (c)-[:CREATED_BY]->(n),
     (a)-[:CREATED_BY]->(n),
     (b)-[:CREATED_BY]->(n)
+
+// Четвертый запрос скрипта - прогоняется отдельно
 
 MATCH (n:User)
 WHERE n.username="Ramzes666"
