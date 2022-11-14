@@ -66,5 +66,5 @@ WHERE n.username="EvilArthas"
 MATCH (n:User)
 WHERE n.username="Ramzes666"
   CREATE
-    (a:Post {content: 'ВСТАНЬ МИД', published: '11.04.2022'}),
-    (a)-[:CREATED_BY]->(n)
+    (d:Post {content: 'ВСТАНЬ МИД', published: '11.04.2022'}),
+    (d)-[:CREATED_BY]->(n)
